@@ -52,6 +52,15 @@ composer create-project --prefer-dist laravel/laravel
 # Дописываем правило в host
 # 192.168.10.10 calendar.test
 
+# Устанавливаем https://nodejs.org/en/
+# указывае его в PhpStorm
+# File | Settings | Languages & Frameworks | Node.js and NPM
 
+# Указываем Vagrant в PhpStorm
+# File | Settings | Tools | Vagrant
+
+# Установка модулей из package.json
+# Установка uikit
+npm install uikit
 
 
