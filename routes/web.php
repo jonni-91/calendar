@@ -28,9 +28,9 @@ Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'
 
 //Route::get('/login', [App\Http\Controllers\SiteController::class, 'login'])->name('login');
 
-Route::match(['get','post'], 'register' , function (){
-    return redirect('/');
-});
+//Route::match(['get','post'], 'register' , function (){
+//    return redirect('/');
+//});
 
 //Route::get('/persons',[App\Http\Controllers\Person\IndexController::class, 'index'])->name('persons');
 

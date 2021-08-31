@@ -35,10 +35,10 @@
 					<div class="uk-margin-small">
 						<div class="uk-inline uk-width-1-1">
 							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-							<input id="email" class="uk-input uk-border-pill @error('email') is-invalid @enderror"
-                                   name="email" value="{{ old('email') }}" required placeholder="E-mail"
-                                   autocomplete="email" autofocus type="email">
-                            @error('email')
+                            <input id="phone" class="uk-input uk-border-pill @error('phone') is-invalid @enderror"
+                                   name="phone" value="{{ old('phone') }}" required placeholder="Phone number"
+                                   autocomplete="phone" autofocus type="phone">
+                            @error('phone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

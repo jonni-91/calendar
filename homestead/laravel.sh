@@ -15,6 +15,9 @@ php artisan make:auth
 
 php artisan migrate
 
+php artisan config:cache
+php artisan migrate:refresh
+
 php artisan make:controller Person/IndexController
 
 php artisan storage:link

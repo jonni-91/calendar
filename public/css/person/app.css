@@ -6039,7 +6039,7 @@ ul.uk-nav-sub {
 /* Divider modifier
  ========================================================================== */
 /*
- * Set gutter 
+ * Set gutter
  */
 .uk-subnav-divider {
   margin-left: -41px;
@@ -10199,7 +10199,7 @@ iframe.uk-cover {
 
 .uk-position-center-right-out {
   left: 100%;
-  width: -webkit-max-content;
+  width:    -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
