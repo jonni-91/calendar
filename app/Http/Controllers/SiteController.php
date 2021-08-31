@@ -8,6 +8,6 @@ class SiteController extends Controller
 {
     public function index()
     {
-        return view('index', ['data' => 'Controller success!']);
+        return view('public.index', ['data' => 'Controller success!']);
     }
 }
