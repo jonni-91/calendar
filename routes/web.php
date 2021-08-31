@@ -20,20 +20,31 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', [ SiteController::class, 'index' ]);
 // OR
 
-Auth::routes();
-Route::get('/', [App\Http\Controllers\SiteController::class, 'index']);
+//if(App::getLocale() != 'ru'){
+//
+//}
+//
+Route::redirect('/','/ru');
+Route::group([
+    'prefix' => '{locale}',
+    'where' =>['locale' => '[a-zA-Z]{2}']
+], function (){
+    Auth::routes();
+    Route::get('/', [App\Http\Controllers\SiteController::class, 'index']);
 
 
-Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout']);
+    Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout']);
 
-//Route::get('/login', [App\Http\Controllers\SiteController::class, 'login'])->name('login');
+    //Route::get('/login', [App\Http\Controllers\SiteController::class, 'login'])->name('login');
 
-//Route::match(['get','post'], 'register' , function (){
-//    return redirect('/');
-//});
+    //Route::match(['get','post'], 'register' , function (){
+    //    return redirect('/');
+    //});
 
-//Route::get('/persons',[App\Http\Controllers\Person\IndexController::class, 'index'])->name('persons');
+    //Route::get('/persons',[App\Http\Controllers\Person\IndexController::class, 'index'])->name('persons');
 
-Route::prefix('persons')->group(function (){ // ->middleware('auth')
-    Route::get('/',[App\Http\Controllers\Person\IndexController::class, 'index']);
+    Route::prefix('persons')->group(function (){ // ->middleware('auth')
+        Route::get('/',[App\Http\Controllers\Person\IndexController::class, 'index']);
+    });
+
 });

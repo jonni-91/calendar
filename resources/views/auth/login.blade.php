@@ -15,7 +15,7 @@
             </div>
         </div>
     @endif
-	<div class="login uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-overflow-hidden uk-light" data-uk-height-viewport>
+	<div class="uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-overflow-hidden uk-light" data-uk-height-viewport>
 		<!-- overlay -->
 		<div class="uk-position-cover uk-overlay-primary"></div>
 		<!-- /overlay -->
@@ -29,15 +29,25 @@
 			</div>
 
 			<!-- login -->
-			<form class="toggle-class" method="POST" action="{{ route('login') }}">
+			<form class="toggle-class" method="POST" action="{{ route('login', app()->getLocale()) }}">
                 @csrf
 				<fieldset class="uk-fieldset">
 					<div class="uk-margin-small">
 						<div class="uk-inline uk-width-1-1">
 							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                            <input id="phone" class="uk-input uk-border-pill @error('phone') is-invalid @enderror"
-                                   name="phone" value="{{ old('phone') }}" required placeholder="Phone number"
-                                   autocomplete="phone" autofocus type="phone">
+                            <button class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle">use login</button>
+                            <div class="toggle">
+                                <input id="phone" class="uk-input uk-border-pill @error('phone') is-invalid @enderror"
+                                       name="phone" value="{{ old('phone') }}" required placeholder="{{__('auth.phone')}}"
+                                       autocomplete="phone" autofocus type="phone">
+                            </div>
+                            <div class="toggle" hidden>
+                                <input id="login" class="uk-input uk-border-pill @error('login') is-invalid @enderror"
+                                       name="login" value="{{ old('login') }}" required placeholder="{{__('auth.your_login')}}"
+                                       autocomplete="phone" autofocus type="login">
+                            </div>
+
+
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -49,7 +59,7 @@
 						<div class="uk-inline uk-width-1-1">
 							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
 							<input class="uk-input uk-border-pill @error('password') is-invalid @enderror"
-                                   required placeholder="Password" type="password"
+                                   required placeholder="{{__('auth.password')}}" type="password"
                                    name="password" autocomplete="current-password">
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -61,27 +71,27 @@
 					<div class="uk-margin-small">
                         <input class="uk-checkbox" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 						<label for="remember">
-                            {{ __('Keep me logged in') }}
+                            {{ __('auth.keep_logged') }}
                         </label>
 					</div>
 					<div class="uk-margin-bottom">
-						<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">LOG IN</button>
+						<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">{{ __('auth.log_in') }}</button>
 					</div>
 				</fieldset>
 			</form>
 			<!-- /login -->
 
 			<!-- recover password -->
-			<form class="toggle-class" method="POST" action="{{ route('password.request') }}" hidden>
+			<form class="toggle-class" method="POST" action="{{ route('password.request', app()->getLocale()) }}" hidden>
                 @csrf
 				<div class="uk-margin-small">
 					<div class="uk-inline uk-width-1-1">
 						<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
-						<input class="uk-input uk-border-pill" placeholder="E-mail" required type="email">
+						<input class="uk-input uk-border-pill" placeholder="{{__('title_email')}}" required type="email">
 					</div>
 				</div>
 				<div class="uk-margin-bottom">
-					<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">SEND PASSWORD</button>
+					<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">{{__('auth.send_password')}}</button>
 				</div>
 			</form>
 			<!-- /recover password -->
@@ -92,14 +102,14 @@
                     @if (Route::has('password.request'))
 					    <a class="uk-link-reset uk-text-small toggle-class"
                            data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade"
-                           href="{{ route('password.request') }}"
+                           href="{{ route('password.request', app()->getLocale()) }}"
                         >
-                            {{ __('Forgot Your Password?') }}
+                            {{ __('auth.forgot_password') }}
                         </a>
                     @endif
                     <a class="uk-link-reset uk-text-small toggle-class"
                        data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden>
-                        <span data-uk-icon="arrow-left"></span> Back to Login</a>
+                        <span data-uk-icon="arrow-left"></span> {{__('auth.back_login')}}</a>
 				</div>
 			</div>
 			<!-- action buttons -->

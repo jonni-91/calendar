@@ -23,3 +23,5 @@ php artisan make:controller Person/IndexController
 php artisan storage:link
 
 php artisan make:request ContactRequest
+
+php artisan make:middleware SetLanguage
