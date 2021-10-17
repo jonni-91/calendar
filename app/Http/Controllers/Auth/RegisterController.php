@@ -49,11 +49,18 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
+        $validationRule = [
             'name' => ['required', 'string', 'max:255'],
             'phone' => ['required', 'numeric', 'min:10', 'starts_with: 6,7,8,9', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+            'password' => ['required', 'string', 'min:6', 'confirmed'],
+        ];
+        if(isset($data['email'])) {
+            $validationRule['email'] = ['required', 'string', 'email', 'max:255', 'unique:users'];
+        }
+        if(isset($data['login'])) {
+            $validationRule['login'] = ['required', 'string', 'min:6', 'max:64', 'unique:users'];
+        }
+        return Validator::make($data, $validationRule);
     }
 
     /**
@@ -64,15 +71,28 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        if(!isset($data['email']))
-        {
+        if(!isset($data['email'])) {
             $data['email'] = $data['phone'].'@'.$_SERVER['SERVER_NAME'];
         }
-        return User::create([
+        if(!isset($data['login'])) {
+            $data['login'] = $data['phone'].'@'.$_SERVER['SERVER_NAME'];
+        }
+         $user = User::create([
             'name' => $data['name'],
             'phone' => $data['phone'],
+            'login' => $data['login'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $token = $user->createToken('myapptoken')->plainTextToken;
+
+        $response =  [
+          'user' => $user,
+          'token' => $token
+        ];
+
+        //return response($response, 201);
+        return $user;
     }
 }

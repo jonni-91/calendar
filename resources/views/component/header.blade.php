@@ -69,7 +69,7 @@
                     <a  href="{{ route('register', app()->getLocale()) }}">{{ __('component.register') }}</a>
                 @endif
             @else
-                <a href="/persons"> {{ Auth::user()->name }}</a>
+                <a href="{{ route('persons', app()->getLocale()) }}">{{ Auth::user()->name }}</a>
                 <a href="{{ route('logout', app()->getLocale()) }}"
                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -81,5 +81,5 @@
             @endguest
         </div>
     </div>
-    @include('component.locale')
+    @include('component.setting_site')
 </div>

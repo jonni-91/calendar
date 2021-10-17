@@ -3,12 +3,26 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+        @if($errors->any())
+            <div class="uk-alert-danger" uk-alert>
+                <a class="uk-alert-close" uk-close></a>
+                <div class="uk-animation-toggle" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <ul class="uk-list uk-list-hyphen  uk-text-center  uk-animation-scale-up">
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        @endif
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('auth.register') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register', app()->getLocale()) }}">
+                    <form method="POST" action="{{ route('register')}}">
                         @csrf
 
                         <div class="form-group row">

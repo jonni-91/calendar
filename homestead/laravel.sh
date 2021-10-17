@@ -25,3 +25,10 @@ php artisan storage:link
 php artisan make:request ContactRequest
 
 php artisan make:middleware SetLanguage
+
+php artisan ui vue --auth
+
+composer require intervention/image
+
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"

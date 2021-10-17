@@ -40,6 +40,9 @@ class LoginController extends Controller
 
     public function username()
     {
+        if(!empty($_REQUEST['login'])) {
+            return 'login';
+        }
         return 'phone';
     }
 }

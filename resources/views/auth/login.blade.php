@@ -35,15 +35,18 @@
 					<div class="uk-margin-small">
 						<div class="uk-inline uk-width-1-1">
 							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                            <button class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle">use login</button>
-                            <div class="toggle">
+                            <button id="toggle-login" class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle-auth">
+                                <p class="toggle-auth">use login</p>
+                                <p class="toggle-auth" hidden>use phone</p>
+                            </button>
+                            <div class="toggle-auth">
                                 <input id="phone" class="uk-input uk-border-pill @error('phone') is-invalid @enderror"
                                        name="phone" value="{{ old('phone') }}" required placeholder="{{__('auth.phone')}}"
                                        autocomplete="phone" autofocus type="phone">
                             </div>
-                            <div class="toggle" hidden>
+                            <div class="toggle-auth" hidden>
                                 <input id="login" class="uk-input uk-border-pill @error('login') is-invalid @enderror"
-                                       name="login" value="{{ old('login') }}" required placeholder="{{__('auth.your_login')}}"
+                                       name="login" value="{{ old('login') }}" placeholder="{{__('auth.your_login')}}"
                                        autocomplete="phone" autofocus type="login">
                             </div>
 

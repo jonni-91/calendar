@@ -1,0 +1,1603 @@
+#sc-sidebar-main .sc-sidebar-menu, #sc-sidebar-main .sc-sidebar-menu>li, #sc-sidebar-main .sc-sidebar-menu>li>.sc-sidebar-menu-sub, #sc-sidebar-main .sc-sidebar-menu>li>.sc-sidebar-menu-sub ul, #sc-sidebar-main .sc-sidebar-menu>li>.sc-sidebar-menu-sub ul>li, #sc-sidebar-main .sc-sidebar-menu>li>.sc-sidebar-menu-sub>li, .sc-chat-messages, .sc-chat-messages>li, .sc-chat-user-list-inline, .sc-chat-user-list-inline>li, .sc-list-messages, .sc-list-messages>li, .sc-task-list-cards, .sc-task-list-cards>li, .sc-task-list-cards>li>li, .sc-top-menu li, .sc-top-menu li>li, .sc-top-menu ul, .sc-top-menu ul>li
+    margin: 0
+    padding: 0
+    list-style: none
+
+
+#sc-header .uk-navbar .uk-navbar-nav>li .uk-navbar-dropdown-bottom-left:after
+    left: 20px
+
+#sc-header .uk-navbar-dropdown:after
+    content: ''
+    position: absolute
+    display: block
+    top: -8px
+    right: 20px
+    width: 0
+    height: 0
+    border: 4px solid transparent
+    border-bottom-color: #fff
+
+#sc-header .uk-navbar-nav > li > a
+    min-height: 50px
+
+#sc-header [class*=uk-navbar-dropdown-bottom]
+    margin-top: 1px
+
+#sc-header .uk-navbar-dropdown
+    padding: 5px 10px
+    line-height: normal
+
+.sc-padding-remove
+    padding: 0!important
+
+.sc-padding-remove-top
+    padding-top: 0!important
+
+.sc-padding-remove-bottom
+    padding-bottom: 0!important
+
+.sc-padding-remove-left
+    padding-left: 0!important
+
+.sc-padding-remove-right
+    padding-right: 0!important
+
+._sc-list-group, .uk-list>.sc-list-group, .uk-sortable-drag.sc-list-group
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    padding-top: 8px
+    padding-bottom: 8px
+    font-size: 14px
+    font-size: .875rem
+
+._sc-list-group .sc-list-addon, ._sc-list-group .sc-list-body, .uk-list>.sc-list-group .sc-list-addon, .uk-list>.sc-list-group .sc-list-body, .uk-sortable-drag.sc-list-group .sc-list-addon, .uk-sortable-drag.sc-list-group .sc-list-body
+    min-height: 32px
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-line-pack: center
+    align-content: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+._sc-list-group .sc-list-addon, .uk-list>.sc-list-group .sc-list-addon, .uk-sortable-drag.sc-list-group .sc-list-addon
+    padding-right: 16px
+
+._sc-list-group .sc-list-body, .uk-list>.sc-list-group .sc-list-body, .uk-sortable-drag.sc-list-group .sc-list-body
+    -webkit-box-flex: 1
+    -ms-flex: 1
+    flex: 1
+    line-height: 1.4
+    min-width: 0
+    max-width: 100%
+
+._sc-list-group .sc-list-body>*, .uk-list>.sc-list-group .sc-list-body>*, .uk-sortable-drag.sc-list-group .sc-list-body>*
+    max-width: 100%
+    white-space: nowrap
+
+._sc-list-group .sc-list-body+.sc-list-addon, .uk-list>.sc-list-group .sc-list-body+.sc-list-addon, .uk-sortable-drag.sc-list-group .sc-list-body+.sc-list-addon
+    padding-right: 0
+    padding-left: 16px
+
+._sc-list-group.sc-item-checked .sc-list-body label, .sc-item-checked.uk-sortable-drag.sc-list-group .sc-list-body label, .uk-list>.sc-item-checked.sc-list-group .sc-list-body label
+    text-decoration: line-through
+
+._sc-list-group label span, .uk-list>.sc-list-group label span, .uk-sortable-drag.sc-list-group label span
+    display: block
+    color: rgba(0, 0, 0, .54)
+    font-size: 12px
+    font-size: .75rem
+
+._uk-list-li.uk-active+.sc-list-group .sc-list-body:after, .uk-list:not(.uk-list-bullet):not(.uk-list-disc):not(.uk-list-circle):not(.uk-list-square):not(.uk-list-decimal):not(.uk-list-hyphen)>li.uk-active+.sc-list-group .sc-list-body:after
+    border-top-color: transparent!important
+
+._uk-list-li.uk-active .sc-list-body:after, .uk-list:not(.uk-list-bullet):not(.uk-list-disc):not(.uk-list-circle):not(.uk-list-square):not(.uk-list-decimal):not(.uk-list-hyphen)>li.uk-active .sc-list-body:after
+    border-top-color: transparent!important
+
+.uk-list.uk-list-divider>.sc-list-group:nth-child(n+2)
+    border: none
+    padding-top: 8px
+    padding-bottom: 7px
+    margin-top: 0
+
+.uk-list.uk-list-divider>.sc-list-group:nth-child(n+2) .sc-list-body
+    position: relative
+
+.uk-list.uk-list-divider>.sc-list-group:nth-child(n+2) .sc-list-body:after
+    content: ''
+    position: absolute
+    display: block
+    top: -8px
+    left: 0
+    width: 100%
+    height: 0
+    border-top: 1px solid rgba(0, 0, 0, .12)
+
+.uk-list.uk-list-divider>.sc-list-group+.uk-active
+    border-radius: 0
+
+.uk-list.sc-list-hoverable .sc-list-group, .uk-list.sc-list-hoverable .sc-list-group .sc-list-body:after
+    -webkit-transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+
+.uk-list.sc-list-hoverable .sc-list-group:hover
+    background: rgba(0, 0, 0, .08)
+
+.uk-list.sc-list-hoverable .sc-list-group:hover .sc-list-body:after
+    border-top-color: transparent
+
+.uk-list.sc-list-hoverable .sc-list-group:hover+.sc-list-group .sc-list-body:after
+    border-top-color: transparent
+
+.sc-avatar, .sc-avatar-initials
+    border-radius: 50%
+    display: inline-block
+
+.sc-avatar-initials
+    width: 32px
+    height: 32px
+    line-height: 32px
+    font-size: 12px
+    font-size: .75rem
+    font-weight: 500
+    text-align: center
+    background: #fff
+    display: -webkit-inline-box
+    display: -ms-inline-flexbox
+    display: inline-flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+.sc-avatar-initials-md
+    width: 64px
+    height: 64px
+    font-size: 24px
+    font-size: 1.5rem
+
+.sc-avatar-initials-lg
+    width: 96px
+    height: 96px
+    font-size: 36px
+    font-size: 2.25rem
+
+.sc-card-user-profile .sc-avatar
+    -webkit-transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    height: 64px
+    width: 64px
+    border: 2px solid rgba(0, 0, 0, .2)
+
+.sc-card-user-profile.is-stuck .sc-avatar
+    width: 48px
+    height: 48px
+
+.sc-avatar-wrapper
+    position: relative
+    display: inline-block
+    width: 32px
+    height: 32px
+    background: #eee
+    border-radius: 50%
+.sc-avatar-wrapper .sc-user-status
+    width: 8px
+    height: 8px
+    right: -3px
+    top: -3px
+
+.sc-avatar-wrapper-lg
+    width: 96px
+    height: 96px
+
+.sc-avatar-wrapper-lg .sc-user-status
+    width: 12px
+    height: 12px
+    right: 5px
+    top: 5px
+
+.sc-avatar-wrapper-md
+    width: 64px
+    height: 64px
+
+.sc-avatar-wrapper-md .sc-user-status
+    width: 10px
+    height: 10px
+    right: 1px
+    top: 1px
+
+.sc-avatar-wrapper .sc-avatar-status
+    position: absolute
+    right: -2px
+    top: -2px
+
+.sc-avatar-border
+    border: 1px solid rgba(0, 0, 0, .12)
+
+.sc-avatar-wrapper
+    position: relative
+    display: inline-block
+    width: 32px
+    height: 32px
+    background: #eee
+    border-radius: 50%
+
+.sc-avatar-wrapper .sc-user-status
+    width: 8px
+    height: 8px
+    right: -3px
+    top: -3px
+
+.sc-avatar-wrapper-lg
+    width: 96px
+    height: 96px
+
+.sc-avatar-wrapper-lg .sc-user-status
+    width: 12px
+    height: 12px
+    right: 5px
+    top: 5px
+
+.sc-avatar-wrapper-md
+    width: 64px
+    height: 64px
+
+.sc-avatar-wrapper-md .sc-user-status
+    width: 10px
+    height: 10px
+    right: 1px
+    top: 1px
+
+.sc-avatar-wrapper .sc-avatar-status
+    position: absolute
+    right: -2px
+    top: -2px
+
+.sc-avatar-border
+    border: 1px solid rgba(0, 0, 0, .12)
+
+.sc-list-images
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: start
+    -ms-flex-align: start
+    align-items: flex-start
+    margin: 0
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+
+.sc-list-images li
+    max-height: 96px
+    padding: 4px!important
+
+.sc-list-images img
+    max-height: 64px
+    width: auto
+    border-radius: 4px
+
+.sc-list-shadow
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    list-style: none
+    margin: 0
+    padding: 0
+
+.sc-list-shadow>li
+    padding: 8px 12px
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    border-radius: 3px
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
+    align-items: flex-start
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    margin-left: 0
+    background: #fff
+    -webkit-box-flex: 1
+    -ms-flex: 1
+    flex: 1
+
+.sc-list-shadow>li a
+    font-weight: 400
+    color: #0277bd
+    min-width: 0
+    display: block
+
+.sc-list-shadow>li p
+    margin: 0!important
+
+.sc-list-shadow>li+li
+    margin-top: 12px!important
+
+.uk-navbar-dropdown .sc-list-shadow>li+li
+    margin-top: 8px!important
+
+.uk-list.sc-list-align
+    margin-left: -8px!important
+
+.uk-list.sc-list-clickable>*
+    cursor: pointer
+
+.uk-list .sc-list-secondary-text
+    font-size: 14px
+    font-size: .875rem
+    color: rgba(0, 0, 0, .54)
+    text-overflow: ellipsis
+    overflow: hidden
+    max-width: 100%
+    white-space: nowrap
+
+.sc-list-messages
+    border-bottom: 1px solid rgba(0, 0, 0, .08)
+    overflow: hidden
+
+.sc-list-messages>li
+    background: #fff
+    min-height: 68px
+    -webkit-transition: background-color 140ms ease
+    transition: background-color 140ms ease
+    cursor: pointer
+    margin-top: -1px
+    border-top: 1px solid rgba(0, 0, 0, .08)
+
+.sc-list-messages>li.sc-item-checked
+    background: #fffde7
+
+.sc-list-messages>li .sc-message-card:not(.sc-message-expanded)
+    -webkit-transition: all 140ms ease
+    transition: all 140ms ease
+
+.sc-list-messages>li:hover
+    border-color: transparent
+
+.sc-list-messages>li:hover .sc-message-card:not(.sc-message-expanded)
+    z-index: 10
+    position: relative
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12)
+
+.sc-list-messages>li:hover .sc-message-card:not(.sc-message-expanded) .sc-message-date
+    display: none
+
+.sc-list-messages>li:hover .sc-message-card:not(.sc-message-expanded) .sc-message-actions
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+.sc-message-card
+    padding: 12px 24px
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-flow: column
+    flex-flow: column
+    width: 100%
+    overflow-x: hidden
+
+.sc-message-title
+    font-weight: 400
+    font-size: 16px
+    font-size: 1rem
+    font-family: Roboto, Arial, Helvetica, sans-serif
+    margin: 0
+    padding-right: 24px
+
+.sc-message-date
+    font-size: 14px
+    font-size: .875rem
+    color: rgba(0, 0, 0, .54)
+
+.sc-message-close
+    font-size: 24px
+    font-size: 1.5rem
+    margin: 0 0 0 24px
+    -webkit-transition: all 280ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 280ms cubic-bezier(.55, 0, .1, 1)
+    color: rgba(0, 0, 0, .54)
+
+.sc-message-close:hover
+    color: rgba(0, 0, 0, .87)
+
+.sc-message-actions
+    display: none
+
+.sc-message-actions .mdi
+    height: 32px
+    width: 32px
+    text-align: center
+    text-decoration: none
+    color: rgba(0, 0, 0, .54)
+
+.sc-message-actions .mdi:before
+    line-height: 32px
+
+.sc-message-actions .mdi+.mdi
+    margin-left: 8px
+
+.sc-message-actions .mdi.uk-open:after, .sc-message-actions .mdi:hover:after
+    -webkit-transform: scale3d(1.2, 1.2, 1.2)
+    transform: scale3d(1.2, 1.2, 1.2)
+
+.sc-message-expanded #sc-message-single
+    background: #fff
+    position: absolute
+    left: 0
+    right: 0
+    z-index: 1300
+    display: none
+
+.sc-message-expanded #sc-message-single .sc-message-card
+    height: 100%
+    overflow: hidden
+    padding: 24px
+
+.sc-padding
+    padding: 24px
+
+.sc-padding-top
+    padding-top: 24px!important
+
+.sc-padding-bottom
+    padding-bottom: 24px!important
+
+.sc-padding-ends
+    padding-top: 24px!important
+    padding-bottom: 24px!important
+
+.sc-padding-large
+    padding: 40px
+
+.sc-padding-large-ends
+    padding-bottom: 40px!important
+    padding-top: 40px!important
+
+.sc-padding-large-top
+    padding-top: 40px!important
+
+.sc-padding-large-bottom
+    padding-bottom: 40px!important
+
+.sc-padding-medium
+    padding: 16px
+
+.sc-padding-medium-ends
+    padding-top: 16px!important
+    padding-bottom: 16px!important
+
+.sc-padding-medium-top
+    padding-top: 16px!important
+
+.sc-padding-medium-bottom
+    padding-bottom: 16px!important
+
+.sc-padding-small
+    padding: 8px
+
+.sc-padding-small-ends
+    padding-top: 8px!important
+    padding-bottom: 8px!important
+
+.sc-padding-small-top
+    padding-top: 8px!important
+
+.sc-padding-small-bottom
+    padding-bottom: 8px!important
+
+.sc-padding-mini
+    padding: 4px
+
+.sc-padding-mini-ends
+    padding-top: 4px!important
+    padding-bottom: 4px!important
+
+.sc-padding-mini-top
+    padding-top: 4px!important
+
+.sc-padding-mini-bottom
+    padding-bottom: 4px!important
+
+.sc-padding-left
+    padding-left: 24px!important
+
+.sc-padding-right
+    padding-right: 24px!important
+
+.uk-card-header-bg:not([class*=sc-padding])
+    padding: 16px
+
+.uk-card-header:not([class*=sc-padding])
+    padding: 16px 24px
+
+.uk-card>.uk-card-title:not([class*=sc-padding])
+    padding: 16px 24px
+
+.uk-navbar-dropdown:not([class*=sc-padding])
+    padding: 8px 0
+
+.uk-card-footer:not([class*=sc-padding])
+    padding: 16px 24px
+
+.uk-navbar-dropdown .uk-panel-scrollable
+    padding: 8px 0
+    border: none
+    resize: vertical
+
+#sc-header .uk-navbar .uk-navbar-nav>li>a .sc-indicator
+    position: absolute
+    right: 0px
+    top: -5px
+    -webkit-transform: translateX(50%)
+    transform: translateX(50%)
+    background: #e53935
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    display: block
+    border: 2px solid #00838f
+
+
+.sc-button
+    background: #fff
+    border: none
+    border-radius: 4px
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    height: 36px
+    min-width: 70px
+    padding: 4px 16px
+    margin: 0
+    text-align: center
+    text-shadow: none
+    text-transform: uppercase
+    -webkit-transition: all 240ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 240ms cubic-bezier(.55, 0, .1, 1)
+    color: rgba(0, 0, 0, .87)
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    cursor: pointer
+    -webkit-appearance: none
+    display: inline-block
+    vertical-align: middle
+    font-weight: 500!important
+    font-size: 14px!important
+    font-size: .875rem!important
+    line-height: 30px!important
+    overflow: hidden
+    will-change: box-shadow, color
+
+.sc-button.uk-button-dropdown.uk-open, .sc-button:active, .sc-button:focus
+    background: #fff
+    outline: 0
+    text-decoration: none
+    color: rgba(0, 0, 0, .87)
+
+.sc-button.uk-button-dropdown.uk-open>i.mdi, .sc-button:active>i.mdi, .sc-button:focus>i.mdi
+    color: rgba(0, 0, 0, .87)
+
+.sc-button:hover
+    color: rgba(0, 0, 0, .87)
+    -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)
+    text-decoration: none
+
+.sc-button.uk-active, .sc-button.uk-button-dropdown.uk-open, .sc-button:active
+    -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12)
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12)
+
+.sc-button-primary, .sc-button-primary.uk-active, .sc-button-primary:active, .sc-button-primary:focus, .sc-button-primary:hover
+    background: #00838f
+
+.sc-button-secondary, .sc-button-secondary.uk-active, .sc-button-secondary:active, .sc-button-secondary:focus, .sc-button-secondary:hover
+    background: #c62828
+
+.sc-button-danger, .sc-button-danger.uk-active, .sc-button-danger:active, .sc-button-danger:focus, .sc-button-danger:hover
+    background: #e53935
+
+.sc-button-success, .sc-button-success.uk-active, .sc-button-success:active, .sc-button-success:focus, .sc-button-success:hover
+    background: #7cb342
+
+.sc-button-warning, .sc-button-warning.uk-active, .sc-button-warning:active, .sc-button-warning:focus, .sc-button-warning:hover
+    background: #ffb300
+
+.sc-button-custom, .sc-button-custom.uk-active, .sc-button-custom.uk-active:before, .sc-button-custom:active, .sc-button-custom:active:before, .sc-button-custom:before, .sc-button-custom:focus, .sc-button-custom:focus:before, .sc-button-custom:hover, .sc-button-custom:hover:before, .sc-button-custom>i, .sc-button-custom>i:before, .sc-button-danger, .sc-button-danger.uk-active, .sc-button-danger.uk-active:before, .sc-button-danger:active, .sc-button-danger:active:before, .sc-button-danger:before, .sc-button-danger:focus, .sc-button-danger:focus:before, .sc-button-danger:hover, .sc-button-danger:hover:before, .sc-button-danger>i, .sc-button-danger>i:before, .sc-button-primary, .sc-button-primary.uk-active, .sc-button-primary.uk-active:before, .sc-button-primary:active, .sc-button-primary:active:before, .sc-button-primary:before, .sc-button-primary:focus, .sc-button-primary:focus:before, .sc-button-primary:hover, .sc-button-primary:hover:before, .sc-button-primary>i, .sc-button-primary>i:before, .sc-button-secondary, .sc-button-secondary.uk-active, .sc-button-secondary.uk-active:before, .sc-button-secondary:active, .sc-button-secondary:active:before, .sc-button-secondary:before, .sc-button-secondary:focus, .sc-button-secondary:focus:before, .sc-button-secondary:hover, .sc-button-secondary:hover:before, .sc-button-secondary>i, .sc-button-secondary>i:before, .sc-button-success, .sc-button-success.uk-active, .sc-button-success.uk-active:before, .sc-button-success:active, .sc-button-success:active:before, .sc-button-success:before, .sc-button-success:focus, .sc-button-success:focus:before, .sc-button-success:hover, .sc-button-success:hover:before, .sc-button-success>i, .sc-button-success>i:before, .sc-button-warning, .sc-button-warning.uk-active, .sc-button-warning.uk-active:before, .sc-button-warning:active, .sc-button-warning:active:before, .sc-button-warning:before, .sc-button-warning:focus, .sc-button-warning:focus:before, .sc-button-warning:hover, .sc-button-warning:hover:before, .sc-button-warning>i, .sc-button-warning>i:before
+    color: #fff
+
+.disabled>.sc-button, .disabled>.sc-button.uk-active, .disabled>.sc-button:active, .disabled>.sc-button:focus, .disabled>.sc-button:hover, .sc-button-disabled, .sc-button-disabled.uk-active, .sc-button-disabled:active, .sc-button-disabled:focus, .sc-button-disabled:hover, .sc-button:disabled, .sc-button:disabled.uk-active, .sc-button:disabled:active, .sc-button:disabled:focus, .sc-button:disabled:hover
+    color: #999
+    background: #eaeaea
+    -webkit-box-shadow: none!important
+    box-shadow: none!important
+    cursor: default
+    pointer-events: none
+
+.sc-button>i.mdi
+    -webkit-transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    color: rgba(0, 0, 0, .54)
+
+.sc-button>i.mdi:before
+    font-size: 18px
+    font-size: 1.125rem
+
+.sc-button::-moz-focus-inner
+    border: 0
+    padding: 0
+
+.sc-button-block
+    width: 100%
+.sc-button-block+.sc-button-block
+    margin-left: 0
+    margin-top: 12px
+
+.sc-button-flex, .sc-button-flex>span
+    display: -webkit-inline-box
+    display: -ms-inline-flexbox
+    display: inline-flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+.sc-button-flex .mdi
+    margin-top: -2px
+    height: 24px
+
+.sc-button-flex .mdi:before
+    line-height: 1
+
+.sc-button-flat
+    background: 0 0!important
+    -webkit-box-shadow: none!important
+    box-shadow: none!important
+
+.sc-button-flat:hover
+    background: rgba(0, 0, 0, .08)!important
+
+.sc-button-flat.uk-active, .sc-button-flat:active
+    background: rgba(153, 153, 153, .4)
+
+.sc-button-flat-primary, .sc-button-flat-primary.uk-active, .sc-button-flat-primary:active, .sc-button-flat-primary:focus, .sc-button-flat-primary:hover
+    color: #00838f
+
+.sc-button-flat-primary.uk-active
+    color: #00838f
+    background: #e0f7fa
+
+.sc-button-flat-primary:hover
+    background: #e0f7fa!important
+
+.sc-button-flat-danger, .sc-button-flat-danger.uk-active, .sc-button-flat-danger:active, .sc-button-flat-danger:focus, .sc-button-flat-danger:hover
+    color: #e53935
+
+.sc-button-flat-danger.uk-active
+    color: #c62828
+    background: #ffebee
+
+.sc-button-flat-danger:hover
+    background: #ffebee!important
+
+.sc-button-flat-success, .sc-button-flat-success.uk-active, .sc-button-flat-success:active, .sc-button-flat-success:focus, .sc-button-flat-success:hover
+    color: #7cb342
+
+.sc-button-flat-success.uk-active
+    color: #558b2f
+    background: #f1f8e9
+
+.sc-button-flat-success:hover
+    background: #f1f8e9!important
+
+.sc-button-flat-warning, .sc-button-flat-warning.uk-active, .sc-button-flat-warning:active, .sc-button-flat-warning:focus, .sc-button-flat-warning:hover
+    color: #ffb300
+
+.sc-button-flat-warning.uk-active
+    color: #ff8f00
+    background: #fff8e1
+
+.sc-button-flat-warning:hover
+    background: #fff8e1!important
+
+.sc-button-flat.sc-button-disabled, .sc-button-flat:disabled
+    color: #a8a8a8
+    background: #fff
+    cursor: default
+    pointer-events: none
+
+.sc-button-outline
+    -webkit-box-shadow: none!important
+    box-shadow: none!important
+    border: 1px solid rgba(0, 0, 0, .12)
+    line-height: 28px!important
+    color: rgba(0, 0, 0, .87)
+    background: 0 0
+
+.sc-button-outline-square
+    width: 36px!important
+
+.sc-button-outline.uk-active, .sc-button-outline.uk-button-dropdown.uk-open, .sc-button-outline:active, .sc-button-outline:hover
+    border-color: rgba(0, 0, 0, .36)
+
+.sc-button-outline-danger, .sc-button-outline-danger.uk-active, .sc-button-outline-danger:active, .sc-button-outline-danger:focus, .sc-button-outline-danger:hover
+    color: #e53935
+    background: 0 0
+
+.sc-button-outline-danger:hover
+    border-color: #e53935
+
+.sc-button-outline-danger.uk-active
+    color: #c62828
+    background: #ffebee
+
+.sc-button-outline-danger.sc-button-icon>i.mdi
+    color: #e53935
+
+.sc-button-outline-primary, .sc-button-outline-primary.uk-active, .sc-button-outline-primary:active, .sc-button-outline-primary:focus, .sc-button-outline-primary:hover
+    color: #00838f
+    background: 0 0
+
+.sc-button-outline-primary:hover
+    border-color: #00acc1
+
+.sc-button-outline-primary.uk-active
+    color: #00838f
+    background: #e0f7fa
+
+.sc-button-outline-primary.sc-button-icon>i.mdi
+    color: #00acc1
+
+.sc-button-outline-success, .sc-button-outline-success.uk-active, .sc-button-outline-success:active, .sc-button-outline-success:focus, .sc-button-outline-success:hover
+    color: #7cb342
+    background: 0 0
+
+.sc-button-outline-success:hover
+    border-color: #7cb342
+
+.sc-button-outline-success.uk-active
+    color: #558b2f
+    background: #f1f8e9
+
+.sc-button-outline-success.sc-button-icon>i.mdi
+    color: #7cb342
+
+.sc-button-outline-warning, .sc-button-outline-warning.uk-active, .sc-button-outline-warning:active, .sc-button-outline-warning:focus, .sc-button-outline-warning:hover
+    color: #ffb300
+    background: 0 0
+
+.sc-button-outline-warning:hover
+    border-color: #ffb300
+
+.sc-button-outline-warning.uk-active
+    color: #ff8f00
+    background: #fff8e1
+
+.sc-button-outline-warning.sc-button-icon>i.mdi
+    color: #ffb300
+
+.sc-button-outline.sc-button-disabled, .sc-button-outline:disabled
+    color: #a8a8a8!important
+    border-color: rgba(0, 0, 0, .08)
+    background: #fff
+    cursor: default
+    pointer-events: none
+
+.sc-button-wrapper
+    display: inline-block
+    text-align: center
+
+.sc-button-round
+    border-radius: 50%
+    padding: 4px
+
+.sc-button-round .mdi:before
+    margin-top: -1px
+
+.sc-button-state-loading
+    -webkit-transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out
+    width: 100%
+.sc-button-state-loading-start
+    font-size: 0
+    background: #fff!important
+
+.sc-button-state-loading-end
+    width: 36px
+    min-width: 36px
+    border-radius: 50%
+.sc-button-facebook
+    background: #3b5998!important
+
+.sc-button-twitter
+    background: #00aced!important
+
+.sc-button-gplus
+    background: #dd4b39!important
+
+.sc-button-twitch
+    background: #6441a5!important
+
+.sc-button-youtube
+    background: #c4302b!important
+
+.sc-button-linkedin
+    background: #0e76a8!important
+
+.sc-button-social
+    display: -webkit-inline-box
+    display: -ms-inline-flexbox
+    display: inline-flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    min-width: inherit
+
+.sc-button-social, .sc-button-social>i
+    color: #fff!important
+
+.sc-button-social i
+    margin-top: 2px
+
+.sc-button-social>span
+    padding-top: 2px
+    margin-right: 8px
+
+.sc-button-mini
+    line-height: 18px!important
+    min-width: 12px
+    font-size: 11px!important
+    height: 24px
+    padding: 4px 8px
+
+.sc-button-mini.sc-button-outline
+    line-height: 16px!important
+
+.sc-button-small
+    line-height: 26px!important
+    height: 32px
+    min-width: 14px
+    font-size: 12px!important
+    padding: 4px 8px
+
+.sc-button-small.sc-button-outline
+    line-height: 22px!important
+
+.sc-button-large
+    line-height: 42px!important
+    height: 48px
+    font-size: 16px!important
+    min-width: 100px
+
+.sc-button-large.sc-button-outline
+    line-height: 40px!important
+
+.sc-button-icon
+    min-width: 32px
+    padding: 4px 8px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+.sc-button-icon>i, .sc-button-icon>i.mdi, .sc-button-icon>i.mdi:before
+    font-size: 24px
+    line-height: 24px
+
+.sc-button-icon.sc-button-large>i, .sc-button-icon.sc-button-large>i.mdi
+    font-size: 32px
+
+.sc-button-icon.sc-button-small>i, .sc-button-icon.sc-button-small>i.mdi
+    font-size: 18px
+
+.sc-button-icon.sc-button-mini>i, .sc-button-icon.sc-button-mini>i.mdi
+    position: relative
+    font-size: 16px
+    line-height: 1
+
+.sc-button.uk-button-dropdown
+    position: relative
+    padding-right: 32px
+
+.sc-button.uk-button-dropdown:after
+    position: absolute
+    right: 6px
+    top: 3px
+    content: '\f140'
+    font-family: "Material Design Icons"
+    font-size: 20px
+    font-size: 1.25rem
+    -webkit-transition: -webkit-transform 140ms ease
+    transition: -webkit-transform 140ms ease
+    transition: transform 140ms ease
+    transition: transform 140ms ease, -webkit-transform 140ms ease
+
+.sc-button.uk-button-dropdown.uk-open:after
+    -webkit-transform: rotate(180deg)
+    transform: rotate(180deg)
+
+.sc-button .sc-progress-circular
+    width: 18px
+    height: 18px
+    margin-top: 1px
+
+.sc-button-progress
+    min-width: 36px
+    padding: 4px 0
+    border-radius: 50%
+.sc-button-progress-overlay
+    position: relative
+
+.sc-button-progress-layer
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: rgba(255, 255, 255, .5)
+    border-radius: 3px
+
+.sc-button-progress-layer .sc-progress-circular
+    margin-top: 5px
+
+.uk-button-group
+    border-radius: 4px
+
+.uk-button-group:not(.sc-button-group-outline)
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+
+.uk-button-group:not(.sc-button-group-outline)>.sc-button:nth-child(n+2), .uk-button-group:not(.sc-button-group-outline)>div:nth-child(n+2) .sc-button
+    position: relative
+    border-left: 1px solid rgba(0, 0, 0, .1)
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button
+    -webkit-box-shadow: none!important
+    box-shadow: none!important
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button:active, .uk-button-group:not(.sc-button-group-outline) .sc-button:hover
+    background: rgba(0, 0, 0, .08)
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button:active.sc-button-primary, .uk-button-group:not(.sc-button-group-outline) .sc-button:hover.sc-button-primary
+    background: #006c76
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button:active.sc-button-secondary, .uk-button-group:not(.sc-button-group-outline) .sc-button:hover.sc-button-secondary
+    background: #b12424
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button:active.sc-button-success, .uk-button-group:not(.sc-button-group-outline) .sc-button:hover.sc-button-success
+    background: #628e34
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button:active.sc-button-danger, .uk-button-group:not(.sc-button-group-outline) .sc-button:hover.sc-button-danger
+    background: #cd1e1a
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button:active+.sc-button, .uk-button-group:not(.sc-button-group-outline) .sc-button:hover+.sc-button
+    border-left-color: transparent
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button:active
+    -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)!important
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)!important
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button.uk-active
+    background: #00acc1!important
+    color: #fff
+
+.uk-button-group:not(.sc-button-group-outline) .sc-button.uk-open
+    background: rgba(0, 0, 0, .08)
+    outline: 0
+
+.uk-button-group>.sc-button
+    border-radius: 0
+
+.uk-button-group>.sc-button:first-child
+    border-radius: 4px 0 0 4px
+
+.uk-button-group>.sc-button+div>.sc-button, .uk-button-group>.sc-button:last-child
+    border-radius: 0 4px 4px 0
+
+.uk-button-group.sc-button-group-outline
+    margin-left: -1px
+
+.uk-button-group.sc-button-group-outline .sc-button
+    margin-left: -1px
+    background: #fff
+
+.uk-button-group.sc-button-group-outline .sc-button:hover
+    position: relative
+    z-index: 10
+
+.uk-button-group.sc-button-group-outline .sc-button.uk-active
+    background: #00acc1
+    color: #fff
+    z-index: 20
+
+.uk-card-footer>.sc-button-flat:first-child
+    margin-left: -16px
+
+html[dir=rtl] div.dt-buttons .sc-button
+    margin-right: 8px
+    margin-left: 0
+
+html[dir=rtl] div.dt-buttons .sc-button:first-child
+    margin-right: 0
+
+
+.sc-border
+    border: 1px solid rgba(0, 0, 0, .12)
+
+.sc-border-bottom
+    border-bottom: 1px solid rgba(0, 0, 0, .12)
+
+.sc-border-top
+    border-top: 1px solid rgba(0, 0, 0, .12)
+
+.sc-border-dark
+    border: 1px solid rgba(0, 0, 0, .36)
+
+.sc-round
+    border-radius: 3px!important
+
+.sc-round-top
+    border-radius: 3px 3px 0 0!important
+
+.sc-theme-color
+    color: #00acc1!important
+
+.sc-theme-bg
+    background-color: #00acc1!important
+
+.sc-theme-bg-light
+    background-color: #e0f7fa!important
+
+.sc-theme-bg-dark
+    background-color: #00838f!important
+
+.sc-theme-complementary-color
+    color: #d50000!important
+
+.sc-theme-complementary-bg
+    background-color: #d50000!important
+
+.sc-theme-complementary-bg-light
+    background-color: #ffebee!important
+
+.sc-color-primary
+    color: rgba(0, 0, 0, .87)!important
+
+.sc-color-secondary
+    color: rgba(0, 0, 0, .54)!important
+
+.sc-color-danger
+    color: #e53935!important
+
+.sc-light, .sc-light *
+    color: #fff
+
+.sc-light .sc-color-primary
+    color: #fff!important
+
+.sc-light .sc-color-secondary
+    color: #e0e0e0!important
+
+.sc-light .sc-actions-icon
+    color: #fff!important
+
+.sc-light a.mdi:after
+    background-color: rgba(255, 255, 255, .36)
+
+.sc-light .uk-text-meta
+    color: rgba(255, 255, 255, .86)
+
+.sc-text-semibold
+    font-weight: 500
+
+.sc-text-line-through
+    text-decoration: line-through
+
+.sc-text-lh-1
+    line-height: 1
+
+.sc-link
+    color: #0277bd!important
+
+.sc-link-external
+    display: -webkit-inline-box
+    display: -ms-inline-flexbox
+    display: inline-flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+.sc-link-external:before
+    content: '\F3CC'
+    font-family: 'Material Design Icons'
+    font-size: 20px
+    margin-right: 4px
+
+.sc-sr-only
+    position: absolute
+    width: 1px
+    height: 1px
+    padding: 0
+    margin: -1px
+    overflow: hidden
+    clip: rect(0, 0, 0, 0)
+    border: 0
+
+.sc-column-collapsed
+    width: 68px!important
+
+.sc-column-collapsed .sc-js-el-hide
+    display: none!important
+
+.sc-column-collapsed .sc-js-el-show
+    display: block
+    margin: 0 auto
+
+.sc-column-collapsed .uk-card-header
+    padding: 16px 0!important
+
+.sc-widget .uk-card-title
+    font-size: 18px
+    font-size: 1.125rem
+    color: rgba(0, 0, 0, .87)
+    display: block
+    font-weight: 500
+    padding: 0
+    margin: 0
+
+.sc-widget .uk-text-meta
+    padding: 0
+    margin: 0
+
+.sc-widget-addon
+    font-size: 16px
+
+.sc-user-profile-avatar
+    position: relative
+
+.sc-user-profile-avatar img
+    -webkit-transition: all 280ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 280ms cubic-bezier(.55, 0, .1, 1)
+    display: inline-block
+    vertical-align: top
+
+.sc-user-profile-avatar .thumbnail
+    -webkit-transition: all 280ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 280ms cubic-bezier(.55, 0, .1, 1)
+    width: 70px
+    height: 70px
+    line-height: 64px
+    border-radius: 50%
+    border: 2px solid #e1e1e1
+    background-color: #f5f5f5
+    overflow: hidden
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    display: inline-block
+
+.sc-user-profile-avatar .thumbnail.thumbnail-lg
+    width: 100px
+    height: 100px
+
+.sc-user-profile-avatar .btn-file
+    text-align: center
+    position: absolute
+    top: -4px
+    right: -8px
+    width: 32px
+    height: 32px
+    line-height: 32px
+    background: #fff
+    display: block
+    border-radius: 50%
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    overflow: hidden
+
+.sc-user-profile-avatar .btn-file .mdi
+    color: #1e88e5
+    font-size: 24px
+
+.sc-user-profile-avatar .btn-file.fileinput-exists
+    left: -8px
+    right: auto
+
+.sc-user-profile-avatar .btn-file.fileinput-exists .mdi
+    color: #e53935
+
+.sc-user-profile-avatar.fileinput-new .btn-file.fileinput-exists
+    display: none
+
+.sc-user-status
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    border: 2px solid #fff
+    position: absolute
+    right: -4px
+    top: -4px
+
+.sc-user-status.online
+    background: #8bc34a
+
+.sc-user-status.offline
+    background: #bdbdbd
+
+.sc-user-status.busy
+    background: #f44336
+
+.sc-user-status.away
+    background: #ffc107
+
+.btn-file
+    position: relative
+    overflow: hidden
+    vertical-align: middle
+    cursor: pointer
+
+.btn-file input
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    margin: 0
+    font-size: 14px
+    cursor: pointer
+    opacity: 0
+    direction: ltr
+
+.fileinput
+    display: inline-block
+
+.fileinput .form-control
+    display: inline-block
+    padding-top: 7px
+    padding-bottom: 5px
+    margin-bottom: 0
+    vertical-align: middle
+    cursor: text
+
+.fileinput .thumbnail
+    display: inline-block
+    overflow: hidden
+    text-align: center
+    vertical-align: top
+
+.fileinput .thumbnail>img
+    margin-top: 50%
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+.fileinput .btn
+    vertical-align: middle
+
+.fileinput-exists .fileinput-new, .fileinput-new .fileinput-exists
+    display: none!important
+
+.fileinput-inline .fileinput-controls
+    display: inline
+
+.fileinput-filename
+    display: inline-block
+    overflow: hidden
+    vertical-align: middle
+
+[data-sc-input]
+    border-width: 0 0 1px 0
+    border-color: rgba(0, 0, 0, .08)
+    border-radius: 4px 4px 0 0
+
+[data-sc-input]:focus
+    border-color: rgba(0, 0, 0, .36)
+
+.sc-input-wrapper
+    position: relative
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    width: 100%
+.sc-input-wrapper>label
+    color: rgba(0, 0, 0, .54)
+    position: absolute
+    top: 16px
+    left: 8px
+    padding-left: 0
+    right: 0
+    pointer-events: none
+    -webkit-transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    font-size: 14px
+    font-size: .875rem
+
+.sc-input-wrapper>label.uk-label-large
+    font-size: 18px
+    font-size: 1.125rem
+    top: 18px
+    left: 12px
+
+.sc-input-wrapper>label.uk-label-large+[data-sc-input]
+    height: 64px
+    padding: 18px 12px 4px
+
+.sc-input-wrapper>label.uk-label-small
+    font-size: 12px
+    font-size: .75rem
+    top: 12px
+    left: 8px
+
+.sc-input-wrapper>label.uk-label-small+[data-sc-input]
+    height: 40px
+    padding: 16px 8px 2px
+
+.sc-input-wrapper>label+textarea[data-sc-input]
+    margin-top: 22px
+    padding-top: 0
+
+.sc-input-wrapper>label+input[data-sc-input]
+    padding: 18px 8px 4px
+    height: 52px
+
+.sc-input-wrapper .uk-form-icon
+    margin-top: -1px
+    height: 40px
+
+.sc-input-wrapper-danger>label
+    color: #e53935
+
+.sc-input-wrapper-danger .sc-input-bar:after, .sc-input-wrapper-danger .sc-input-bar:before
+    background: #e53935
+
+.sc-input-wrapper-danger .uk-form-icon
+    color: #e53935
+
+.sc-input-wrapper-success .sc-input-bar:after, .sc-input-wrapper-success .sc-input-bar:before
+    background: #7cb342
+
+.sc-input-wrapper-success .uk-form-icon
+    color: #7cb342
+
+.sc-input-wrapper-outline label
+    background: #fff
+    display: inline-block
+    right: auto
+    left: 12px
+    top: 10px
+    border-radius: 2px
+
+.sc-input-wrapper-outline label+input[data-sc-input]
+    height: 40px
+    padding: 10px 12px 6px
+
+.sc-input-wrapper-outline label+textarea[data-sc-input]
+    height: auto
+    margin-top: 0
+    padding-top: 8px
+
+.sc-input-wrapper-outline .uk-form-icon
+    left: 0
+    margin-top: 0
+
+.sc-input-wrapper-outline .uk-form-icon-flip
+    right: 0
+    left: auto
+
+.sc-input-wrapper-outline.sc-input-wrapper-danger label
+    color: #e53935
+
+.sc-input-filled>label, .sc-input-focus>label
+    top: 4px
+    font-size: 12px
+    font-size: .75rem
+
+.sc-input-filled>label.uk-label-large, .sc-input-focus>label.uk-label-large
+    font-size: 14px
+    font-size: .875rem
+    top: 6px
+
+.sc-input-filled>label.uk-label-small, .sc-input-focus>label.uk-label-small
+    font-size: 10px
+    font-size: .625rem
+    top: 4px
+
+.sc-input-filled.sc-input-wrapper-count .text-count-wrapper, .sc-input-focus.sc-input-wrapper-count .text-count-wrapper
+    opacity: 1
+
+.sc-input-filled.sc-input-wrapper-outline>label, .sc-input-focus.sc-input-wrapper-outline>label
+    top: -9px
+    left: 8px
+    right: auto
+    padding: 0 4px
+
+.sc-input-focus .sc-input-bar:after, .sc-input-focus .sc-input-bar:before
+    width: 50%
+.sc-input-match-field
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    height: 52px
+
+.sc-input-outline, .sc-textarea-outline
+    border-radius: 4px
+    border-width: 1px
+    padding: 8px 12px 7px
+
+.sc-input-outline:focus, .sc-textarea-outline:focus
+    border-color: #1976d2
+
+.sc-input-outline
+    height: 40px
+
+.sc-input-bar
+    display: block
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+.sc-input-bar:after, .sc-input-bar:before
+    content: ''
+    display: block
+    position: absolute
+    bottom: 0
+    width: 0
+    height: 2px
+    background: #1976d2
+    -webkit-transition: width 140ms cubic-bezier(.55, 0, .1, 1)
+    transition: width 140ms cubic-bezier(.55, 0, .1, 1)
+
+.sc-input-bar:before
+    left: 50%
+.sc-input-bar:after
+    right: 50%
+.uk-form-width-xsmall+.sc-input-bar
+    width: 50px
+
+.uk-form-width-small+.sc-input-bar
+    width: 130px
+
+.uk-form-width-medium+.sc-input-bar
+    width: 200px
+
+.uk-form-width-large+.sc-input-bar
+    width: 500px
+
+.sc-switch-label
+    position: relative
+    display: inline-block
+    min-width: 120px
+    cursor: pointer
+    text-align: left
+    padding: 4px 0 4px 44px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+.sc-switch-label:after, .sc-switch-label:before
+    content: ""
+    position: absolute
+    margin: 0
+    outline: 0
+    top: 50%
+    -webkit-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+    -webkit-transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+    transition: all 140ms cubic-bezier(.55, 0, .1, 1)
+
+.sc-switch-label:before
+    left: 1px
+    width: 34px
+    height: 14px
+    background-color: #9e9e9e
+    border-radius: 8px
+
+.sc-switch-label:after
+    left: 0
+    width: 20px
+    height: 20px
+    background-color: #eee
+    border-radius: 50%
+    border: 10px solid #fff
+    background: #fff
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+.sc-switch-toggle-on
+    display: none
+
+.sc-switch-toggle-off
+    display: inline-block
+
+.sc-switch-input
+    display: none
+
+.sc-switch-input:checked+.sc-switch-label:before
+    background-color: #90caf9
+
+.sc-switch-input:checked+.sc-switch-label:after
+    background-color: #1976d2
+    border-color: #1976d2
+    -webkit-transform: translate(80%, -50%)
+    transform: translate(80%, -50%)
+
+.sc-switch-input:checked+.sc-switch-label .sc-switch-toggle-on
+    display: inline-block
+
+.sc-switch-input:checked+.sc-switch-label .sc-switch-toggle-off
+    display: none
+
+.sc-form-error-block
+    color: #e53935
+    font-size: 12px
+    font-size: .75rem
+    padding: 8px 0 0 8px
+    display: inline-block
+
+.sc-form-errors-list
+    color: #e53935
+    font-size: 14px
+    font-size: .875rem
+    padding: 8px 0 4px 8px
+    display: none
+
+.sc-form-errors-list.filled
+    display: block
+
+.cc-validate-wrapper
+    position: relative
+
+.cc-validate-wrapper>.cc-icon
+    position: absolute
+    left: 6px
+    top: 29px
+    width: 52px
+    height: 30px
+    background: #eee
+    border-radius: 4px
+    overflow: hidden
+    display: block
+
+.cc-validate-wrapper>.cc-icon>img
+    margin: -2px 0 0 0
+
+.cc-validate-wrapper>.uk-input
+    padding-left: 72px

@@ -13,29 +13,26 @@
     <title>@yield('head_title')</title>
 </head>
 <body>
-<div class="uk-container-expand wrapper">
+<div class="uk-container-expand wrapper" id="app">
+    @yield('config')
     <div class="uk-child-width-1-1 uk-grid-collapse uk-text-center" uk-grid>
-        <div class="uk-card">
+        <div class="uk-card-default uk-card-body">
             @yield('header')
         </div>
         @if (session('status'))
-            <div class="uk-card">
+            <div class="uk-card-default uk-card-body">
                 <div class="alert alert-success" role="alert">
                     {{ session('status') }}
                 </div>
             </div>
         @endif
-        <div class="uk-card">
+        <div class="uk-card-default uk-card-body">
             @yield('content')
         </div>
-        <div class="uk-card">
+        <div class="uk-card-default uk-card-body">
             @yield('footer')
         </div>
     </div>
-    <div class="uk-section uk-section-primary">
-        <div class="uk-container uk-container-small">
-
-
 </div>
 <script src="@yield('script')"></script>
 <!-- JS FILES -->

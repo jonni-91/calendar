@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use phpDocumentor\Reflection\Types\Integer;
 
 class User extends Authenticatable
 {
@@ -20,6 +21,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'phone',
+        'login',
         'email',
         'password',
     ];
@@ -42,4 +44,41 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'users';
+
+    /**
+     * Получение пользователя по id
+     * @param int $id - id пользователя
+     * @return object
+     */
+    protected static function getUserById(int $id): object
+    {
+        return self::where('id', $id)->first();
+    }
+
+    /**
+     * Получение пользователя по логину
+     * @param string $login - логин пользователя
+     * @return object
+     */
+    protected static function getUserByLogin(string $login): object
+    {
+        return self::where('login', $login)->first();
+    }
+
+    /**
+     * Получение пользователя по телефон
+     * @param int $phone - телефон пользователя
+     * @return object
+     */
+    protected static function getUserByPhone(int $phone): object
+    {
+        return self::where('phone', $phone)->first();
+    }
 }
